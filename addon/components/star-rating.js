@@ -10,6 +10,8 @@ const RatingComponent = Component.extend({
 
   fillColor: 'yellow',
   baseColor: 'lightgrey',
+  fillOpacity: '1',
+  baseOpacity: '1',
   numStars: 5,
   anyPercent: false,
   rating: 0,

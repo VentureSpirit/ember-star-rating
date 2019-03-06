@@ -15,8 +15,9 @@
         x2="100%"
         y2="0%"
       >
-        <stop class="star-rating-filled" offset="0%" stop-color={{fillColor}}></stop>
-        <stop class="star-rating-base" offset="0%" stop-color={{baseColor}}></stop>
+        {{!-- using alpha channel in stop-color does not work on Safari --> using stop-opacity --}}
+        <stop class="star-rating-filled" offset="0%" stop-color={{fillColor}} stop-opacity={{fillOpacity}}></stop>
+        <stop class="star-rating-base" offset="0%" stop-color={{baseColor}} stop-opacity={{baseOpacity}}></stop>
       </linearGradient>
     </defs>
 
